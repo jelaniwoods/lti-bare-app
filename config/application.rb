@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'boot'
 
 require 'rails/all'
@@ -9,10 +11,10 @@ Bundler.require(*Rails.groups)
 module LtiBareApp
   class Application < Rails::Application
     config.generators do |g|
-          g.test_framework nil
-          g.factory_bot false
-          g.scaffold_stylesheet false
-        end
+      g.test_framework nil
+      g.factory_bot false
+      g.scaffold_stylesheet false
+    end
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
 

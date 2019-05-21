@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class LaunchesController < ApplicationController
-  skip_before_action :verify_authenticity_token, only: [:create]
+  # skip_before_action :verify_authenticity_token, only: [:create]
   before_action :set_launch, only: %i[show edit update destroy]
 
   def create
